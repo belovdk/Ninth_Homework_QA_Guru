@@ -1,7 +1,5 @@
-from selene import be
-from selene.support.shared import browser
+from selene import be, by, browser
 from selene.support.shared.jquery_style import s
-from selene.support import by
 
 
 def test_github():
