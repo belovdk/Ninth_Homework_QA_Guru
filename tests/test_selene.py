@@ -1,7 +1,14 @@
+import allure
+from allure_commons.types import Severity
 from selene import be, by, browser
 from selene.support.shared.jquery_style import s
 
-
+@allure.tag('web')
+@allure.severity(Severity.CRITICAL)
+@allure.label('owner', 'belov d.k.')
+@allure.feature('Поиск')
+@allure.story('Поиск определенного репо и задачи в нем')
+@allure.link('https://github.com', name='Testing')
 def test_github():
     browser.open('/')
 

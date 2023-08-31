@@ -19,3 +19,6 @@ def test_github():
 
     with allure.step('Провереям наличие задачи под номером 65'):
         s(by.partial_text('#65')).should(be.visible)
+
+
+
